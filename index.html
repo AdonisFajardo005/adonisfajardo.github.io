@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,44 +8,45 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
+<div class="background"></div>
+
 <header>
 
-<div class="logo">
-Adonis Fajardo
-</div>
+<div class="logo">Adonis</div>
 
-<nav>
+<nav id="nav">
+
 <a href="#about">Sobre mí</a>
 <a href="#skills">Habilidades</a>
+<a href="#timeline">Carrera</a>
 <a href="#projects">Proyectos</a>
+
 </nav>
+
+<div class="hamburger" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
 
 </header>
 
-<section class="hero fade-in">
 
-<div class="hero-content">
+<section class="hero">
 
 <div class="hero-text">
 
 <h1>Hola, soy Adonis</h1>
 
-<h2>Estudiante de Ingeniería en Sistemas</h2>
+<p>Estudiante de Ingeniería en Sistemas enfocado en desarrollo de software, análisis de datos y bases de datos.</p>
 
-<p>
-Enfocado en análisis de datos, bases de datos y desarrollo de software.
-</p>
-
-<button onclick="goToGithub()">Conoce mis proyectos</button>
+<a href="#projects" class="btn">Ver proyectos</a>
 
 </div>
 
@@ -57,69 +56,45 @@ Enfocado en análisis de datos, bases de datos y desarrollo de software.
 
 </div>
 
-</div>
-
 </section>
 
 
-<section id="about" class="fade-in">
+<section id="about">
 
 <h2>Sobre mí</h2>
 
 <p>
-Soy estudiante de Ingeniería en Sistemas con un enfoque claro en el análisis de datos. 
-Desde el inicio de mi carrera descubrí que mi verdadera pasión está en transformar 
-datos en información útil que apoye decisiones reales.
-</p>
-
-<p>
-Mi objetivo es crecer hacia la ciencia de datos, construyendo progresivamente 
-mis conocimientos en machine learning y modelado predictivo.
+Soy estudiante de Ingeniería en Sistemas con interés en desarrollo de software, análisis de datos y arquitectura de sistemas.
+Me apasiona crear soluciones tecnológicas modernas.
 </p>
 
 </section>
 
 
-<section id="skills" class="fade-in">
+<section id="skills">
 
 <h2>Habilidades</h2>
 
 <div class="skills-grid">
 
-<div class="card">
-<i class="fab fa-java"></i>
+<div class="skill-card">
 <h3>Java</h3>
-<div class="progress"><div class="bar java"></div></div>
+<div class="progress"><span style="width:85%"></span></div>
 </div>
 
-<div class="card">
-<i class="fas fa-database"></i>
+<div class="skill-card">
 <h3>SQL</h3>
-<div class="progress"><div class="bar sql"></div></div>
+<div class="progress"><span style="width:80%"></span></div>
 </div>
 
-<div class="card">
-<i class="fas fa-database"></i>
-<h3>SQL Server</h3>
-<div class="progress"><div class="bar sqlserver"></div></div>
+<div class="skill-card">
+<h3>Python</h3>
+<div class="progress"><span style="width:75%"></span></div>
 </div>
 
-<div class="card">
-<i class="fas fa-database"></i>
-<h3>MySQL</h3>
-<div class="progress"><div class="bar mysql"></div></div>
-</div>
-
-<div class="card">
-<i class="fas fa-file-excel"></i>
-<h3>Excel</h3>
-<div class="progress"><div class="bar excel"></div></div>
-</div>
-
-<div class="card">
-<i class="fas fa-chart-line"></i>
-<h3>Análisis de Datos</h3>
-<div class="progress"><div class="bar data"></div></div>
+<div class="skill-card">
+<h3>JavaScript</h3>
+<div class="progress"><span style="width:65%"></span></div>
 </div>
 
 </div>
@@ -127,7 +102,53 @@ mis conocimientos en machine learning y modelado predictivo.
 </section>
 
 
-<section id="projects" class="fade-in">
+<section id="timeline">
+
+<h2>Mi Carrera</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<div class="timeline-date">2023</div>
+
+<div class="timeline-content">
+<h3>Inicio Ingeniería en Sistemas</h3>
+<p>Comencé mi formación en desarrollo de software y bases de datos.</p>
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-date">2024</div>
+
+<div class="timeline-content">
+<h3>Primeros proyectos</h3>
+<p>Desarrollo de aplicaciones con Java y bases de datos SQL.</p>
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-date">2025</div>
+
+<div class="timeline-content">
+<h3>Análisis de datos</h3>
+<p>Proyectos con Python, visualización de datos y dashboards.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="projects">
 
 <h2>Proyectos</h2>
 
