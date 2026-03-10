@@ -5,7 +5,7 @@ box-sizing:border-box;
 }
 
 body{
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+font-family:'Inter',sans-serif;
 background:#0b0b0f;
 color:white;
 overflow-x:hidden;
@@ -18,10 +18,10 @@ position:fixed;
 width:100%;
 height:100%;
 background:
-radial-gradient(circle at 20% 20%, #1a1a40, transparent),
+radial-gradient(circle at 20% 20%, #1c1c3a, transparent),
 radial-gradient(circle at 80% 80%, #0f3460, transparent);
 z-index:-1;
-animation:move 10s infinite alternate;
+animation:move 12s infinite alternate;
 }
 
 @keyframes move{
@@ -39,8 +39,8 @@ padding:25px 8%;
 }
 
 .logo{
-font-weight:600;
 font-size:20px;
+font-weight:600;
 }
 
 nav{
@@ -52,6 +52,7 @@ nav a{
 text-decoration:none;
 color:white;
 opacity:.8;
+transition:.3s;
 }
 
 nav a:hover{
@@ -92,16 +93,34 @@ padding:14px 30px;
 border-radius:30px;
 text-decoration:none;
 font-weight:600;
+transition:.3s;
 }
 
-/* imagen */
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* imagen perfil */
+
+.hero-image{
+display:flex;
+justify-content:center;
+align-items:center;
+}
 
 .hero-image img{
 width:260px;
 height:260px;
 object-fit:cover;
 border-radius:50%;
-box-shadow:0 20px 60px rgba(0,0,0,.5);
+border:4px solid rgba(255,255,255,0.1);
+box-shadow:0 20px 60px rgba(0,0,0,0.5);
+transition:.4s;
+}
+
+.hero-image img:hover{
+transform:scale(1.05);
+box-shadow:0 25px 70px rgba(0,0,0,0.7);
 }
 
 /* secciones */
@@ -118,7 +137,7 @@ font-size:36px;
 margin-bottom:40px;
 }
 
-/* skills */
+/* habilidades */
 
 .skills-grid{
 display:grid;
@@ -130,8 +149,25 @@ gap:25px;
 background:#111;
 padding:25px;
 border-radius:15px;
-text-align:left;
+text-align:center;
+transition:.3s;
 }
+
+.skill-card:hover{
+transform:translateY(-8px);
+}
+
+.skill-card i{
+font-size:40px;
+margin-bottom:10px;
+display:block;
+}
+
+.skill-card img{
+margin-bottom:10px;
+}
+
+/* barra progreso */
 
 .progress{
 background:#333;
@@ -174,7 +210,7 @@ flex:1;
 text-align:left;
 }
 
-/* repos */
+/* repositorios */
 
 #repos{
 display:grid;
@@ -199,6 +235,12 @@ margin-top:10px;
 color:#00c6ff;
 }
 
+/* contacto */
+
+#contact p{
+margin:10px 0;
+}
+
 /* footer */
 
 footer{
@@ -207,7 +249,7 @@ padding:40px;
 opacity:.6;
 }
 
-/* menu movil */
+/* menu hamburguesa */
 
 .hamburger{
 display:none;
@@ -222,7 +264,7 @@ background:white;
 margin:4px;
 }
 
-/* RESPONSIVE */
+/* responsive */
 
 @media (max-width:900px){
 
@@ -253,6 +295,11 @@ display:flex;
 
 .hamburger{
 display:flex;
+}
+
+.timeline-item{
+flex-direction:column;
+text-align:left;
 }
 
 }
