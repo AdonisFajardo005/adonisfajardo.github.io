@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,6 +11,9 @@
 <link rel="stylesheet" href="style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
@@ -29,8 +33,11 @@ Adonis Fajardo
 
 </header>
 
+<section class="hero fade-in">
 
-<section class="hero">
+<div class="hero-content">
+
+<div class="hero-text">
 
 <h1>Hola, soy Adonis</h1>
 
@@ -42,64 +49,89 @@ Enfocado en análisis de datos, bases de datos y desarrollo de software.
 
 <button onclick="goToGithub()">Conoce mis proyectos</button>
 
+</div>
+
+<div class="hero-image">
+
+<img src="images/profile.jpg">
+
+</div>
+
+</div>
+
 </section>
 
 
-<section id="about">
+<section id="about" class="fade-in">
 
 <h2>Sobre mí</h2>
 
 <p>
 Soy estudiante de Ingeniería en Sistemas con un enfoque claro en el análisis de datos. 
 Desde el inicio de mi carrera descubrí que mi verdadera pasión está en transformar 
-datos en información útil que apoye decisiones reales. Me motiva entender los 
-problemas antes de resolverlos, y encontrar en cada conjunto de datos una historia 
-que vale la pena contar.
+datos en información útil que apoye decisiones reales.
 </p>
 
 <p>
 Mi objetivo es crecer hacia la ciencia de datos, construyendo progresivamente 
-mis conocimientos en machine learning y modelado predictivo. Soy una persona 
-autodidacta, metódica y comprometida con el aprendizaje continuo, porque entiendo 
-que en este campo evolucionar no es opcional.
+mis conocimientos en machine learning y modelado predictivo.
 </p>
 
 </section>
 
 
-<section id="skills">
+<section id="skills" class="fade-in">
 
 <h2>Habilidades</h2>
 
 <div class="skills-grid">
 
-<div class="card">Java</div>
-<div class="card">C++</div>
-<div class="card">SQL</div>
-<div class="card">SQL Server</div>
-<div class="card">MySQL</div>
-<div class="card">Excel Avanzado</div>
-<div class="card">Análisis de Datos</div>
-
+<div class="card">
+<i class="fab fa-java"></i>
+<h3>Java</h3>
+<div class="progress"><div class="bar java"></div></div>
 </div>
 
-<h3>Idiomas</h3>
+<div class="card">
+<i class="fas fa-database"></i>
+<h3>SQL</h3>
+<div class="progress"><div class="bar sql"></div></div>
+</div>
 
-<p>Español (Nativo)</p>
-<p>Inglés (Aprendiendo)</p>
+<div class="card">
+<i class="fas fa-database"></i>
+<h3>SQL Server</h3>
+<div class="progress"><div class="bar sqlserver"></div></div>
+</div>
+
+<div class="card">
+<i class="fas fa-database"></i>
+<h3>MySQL</h3>
+<div class="progress"><div class="bar mysql"></div></div>
+</div>
+
+<div class="card">
+<i class="fas fa-file-excel"></i>
+<h3>Excel</h3>
+<div class="progress"><div class="bar excel"></div></div>
+</div>
+
+<div class="card">
+<i class="fas fa-chart-line"></i>
+<h3>Análisis de Datos</h3>
+<div class="progress"><div class="bar data"></div></div>
+</div>
+
+</div>
 
 </section>
 
 
-<section id="projects">
+<section id="projects" class="fade-in">
 
 <h2>Proyectos</h2>
 
-<p>
-Puedes ver todos mis proyectos de programación y análisis de datos en GitHub.
-</p>
-
-<button onclick="goToGithub()">Ver GitHub</button>
+<div id="repos"></div>
 
 </section>
 
@@ -110,9 +142,7 @@ Puedes ver todos mis proyectos de programación y análisis de datos en GitHub.
 
 </footer>
 
-
 <script src="script.js"></script>
 
 </body>
-
 </html>
