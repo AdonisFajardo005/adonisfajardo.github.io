@@ -1,276 +1,212 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Adonis Fajardo | Portafolio</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adonis Fajardo | Portafolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
-
 <body>
 
-<div class="background"></div>
-
-<header>
-
-<div class="logo">Adonis</div>
-
-<nav id="nav">
-
-<a href="#about">Sobre mí</a>
-<a href="#skills">Habilidades</a>
-<a href="#timeline">Carrera</a>
-<a href="#projects">Proyectos</a>
-<a href="#contact">Contacto</a>
-
-</nav>
-
-<div class="hamburger" onclick="toggleMenu()">
-<span></span>
-<span></span>
-<span></span>
-</div>
-
-</header>
-
-
-<section class="hero">
-
-<div class="hero-text">
-
-<h1>Hola, soy Adonis</h1>
-
-<p>
-Estudiante de Ingeniería en Sistemas de Costa Rica enfocado en desarrollo
-de software, análisis de datos y bases de datos.
-</p>
-
-<a href="#projects" class="btn">Ver proyectos</a>
-
-</div>
-
-
-<div class="hero-image">
-
-<img src="images/profile.jpg" alt="Foto de Adonis">
-
-</div>
-
-</section>
-
-
-
-<section id="about">
-
-<h2>Sobre mí</h2>
-
-<p>
-Soy estudiante de Ingeniería en Sistemas en Costa Rica con interés en
-desarrollo de software, análisis de datos y arquitectura de sistemas.
-Me apasiona crear soluciones tecnológicas modernas y eficientes.
-</p>
-
-</section>
-
-
-
-<section id="skills">
-
-<h2>Habilidades</h2>
-
-<div class="skills-grid">
-
-
-<div class="skill-card">
-
-<i class="devicon-java-plain colored"></i>
-
-<h3>Java</h3>
-
-<div class="progress">
-<span style="width:85%"></span>
-</div>
-
-</div>
-
-
-<div class="skill-card">
-
-<i class="devicon-mysql-plain colored"></i>
-
-<h3>SQL</h3>
-
-<div class="progress">
-<span style="width:80%"></span>
-</div>
-
-</div>
-
-
-<div class="skill-card">
-
-<i class="devicon-python-plain colored"></i>
-
-<h3>Python</h3>
-
-<div class="progress">
-<span style="width:75%"></span>
-</div>
-
-</div>
-
-
-<div class="skill-card">
-
-<i class="devicon-javascript-plain colored"></i>
-
-<h3>JavaScript</h3>
-
-<div class="progress">
-<span style="width:65%"></span>
-</div>
-
-</div>
-
-
-<div class="skill-card">
-
-<i class="devicon-cplusplus-plain colored"></i>
-
-<h3>C++</h3>
-
-<div class="progress">
-<span style="width:70%"></span>
-</div>
-
-</div>
-
-
-<div class="skill-card">
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="40">
-
-<h3>Power BI</h3>
-
-<div class="progress">
-<span style="width:70%"></span>
-</div>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<section id="timeline">
-
-<h2>Mi Carrera</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">
-
-<div class="timeline-date">2023</div>
-
-<div class="timeline-content">
-
-<h3>Inicio Ingeniería en Sistemas</h3>
-
-<p>
-Comencé mi formación en desarrollo de software y bases de datos.
-</p>
-
-</div>
-
-</div>
-
-
-
-<div class="timeline-item">
-
-<div class="timeline-date">2024</div>
-
-<div class="timeline-content">
-
-<h3>Primeros proyectos</h3>
-
-<p>
-Desarrollo de aplicaciones en Java con bases de datos SQL.
-</p>
-
-</div>
-
-</div>
-
-
-
-<div class="timeline-item">
-
-<div class="timeline-date">2025</div>
-
-<div class="timeline-content">
-
-<h3>Análisis de datos</h3>
-
-<p>
-Creación de dashboards y análisis de datos utilizando Python y Power BI.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="projects">
-
-<h2>Proyectos</h2>
-
-<div id="repos"></div>
-
-</section>
-
-
-
-<section id="contact">
-
-<h2>Contacto</h2>
-
-<p>Puedes contactarme directamente por correo:</p>
-
-<p><strong>adonis.fajardo@outlook.es</strong></p>
-
-<p>Costa Rica</p>
-
-</section>
-
-
-
-<footer>
-
-<p>© 2026 Adonis Fajardo</p>
-
-</footer>
-
-
-<script src="script.js"></script>
-
+  <!-- cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- fondo -->
+  <div class="background"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- header -->
+  <header id="header">
+    <div class="logo">AF.</div>
+    <nav id="nav">
+      <a href="#about">Sobre mí</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#timeline">Carrera</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <!-- hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-tag">Disponible para oportunidades</div>
+      <h1>Hola, soy<br><span class="name-highlight">Adonis Fajardo</span></h1>
+      <div class="hero-roles">
+        <span id="typed-text"></span><span class="typed-cursor">|</span>
+      </div>
+      <p>Estudiante de Ingeniería en Sistemas en Costa Rica, apasionado por crear soluciones tecnológicas modernas en desarrollo de software, análisis de datos y bases de datos.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn">Ver proyectos →</a>
+        <a href="#contact" class="btn btn-outline">Contáctame</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Años estudiando</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">6</span>
+          <span class="stat-label">Tecnologías</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">CR</span>
+          <span class="stat-label">Costa Rica</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/profile.jpg" alt="Foto de Adonis">
+    </div>
+  </section>
+
+  <!-- about -->
+  <section id="about" class="reveal">
+    <span class="section-label">Sobre mí</span>
+    <h2>Quién soy</h2>
+    <p class="section-desc">Estudiante de Ingeniería en Sistemas en Costa Rica con interés en desarrollo de software, análisis de datos y arquitectura de sistemas. Me apasiona crear soluciones tecnológicas modernas y eficientes.</p>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-card-icon">💻</div>
+        <h3>Desarrollo de Software</h3>
+        <p>Construcción de aplicaciones robustas con Java, Python y JavaScript orientadas a resolver problemas reales.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">📊</div>
+        <h3>Análisis de Datos</h3>
+        <p>Transformación de datos en insights accionables con Python, SQL y dashboards en Power BI.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">🗄️</div>
+        <h3>Bases de Datos</h3>
+        <p>Diseño y optimización de bases de datos relacionales con SQL para sistemas escalables.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- skills -->
+  <section id="skills" class="reveal">
+    <span class="section-label">Habilidades</span>
+    <h2>Stack tecnológico</h2>
+    <p class="section-desc">Herramientas y lenguajes que uso para construir soluciones.</p>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <i class="devicon-java-plain colored"></i>
+        <h3>Java</h3>
+        <div class="progress"><span data-width="85"></span></div>
+        <div class="skill-pct">85%</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="devicon-mysql-plain colored"></i>
+        <h3>SQL</h3>
+        <div class="progress"><span data-width="80"></span></div>
+        <div class="skill-pct">80%</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="devicon-python-plain colored"></i>
+        <h3>Python</h3>
+        <div class="progress"><span data-width="75"></span></div>
+        <div class="skill-pct">75%</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="devicon-javascript-plain colored"></i>
+        <h3>JavaScript</h3>
+        <div class="progress"><span data-width="65"></span></div>
+        <div class="skill-pct">65%</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="devicon-cplusplus-plain colored"></i>
+        <h3>C++</h3>
+        <div class="progress"><span data-width="70"></span></div>
+        <div class="skill-pct">70%</div>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="42" alt="Power BI">
+        <h3>Power BI</h3>
+        <div class="progress"><span data-width="70"></span></div>
+        <div class="skill-pct">70%</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- timeline -->
+  <section id="timeline" class="reveal">
+    <span class="section-label">Carrera</span>
+    <h2>Mi trayectoria</h2>
+    <p class="section-desc">El camino recorrido hasta hoy.</p>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-date">2023</div>
+        <div class="timeline-content">
+          <h3>Inicio Ingeniería en Sistemas</h3>
+          <p>Comencé mi formación en desarrollo de software y bases de datos, estableciendo las bases de mi carrera en tecnología.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2024</div>
+        <div class="timeline-content">
+          <h3>Primeros proyectos</h3>
+          <p>Desarrollo de aplicaciones en Java con bases de datos SQL, consolidando mis habilidades en backend y modelado de datos.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2025</div>
+        <div class="timeline-content">
+          <h3>Análisis de datos</h3>
+          <p>Creación de dashboards y análisis de datos utilizando Python y Power BI, explorando el mundo de la inteligencia de negocios.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- projects -->
+  <section id="projects" class="reveal">
+    <span class="section-label">Proyectos</span>
+    <h2>Mi trabajo en GitHub</h2>
+    <p class="section-desc">Repositorios públicos con proyectos reales.</p>
+    <div id="repos">
+      <div class="repos-loading">
+        <div class="spinner"></div>
+        Cargando proyectos...
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact" class="reveal">
+    <span class="section-label">Contacto</span>
+    <h2>Hablemos</h2>
+    <p class="section-desc">¿Tienes un proyecto en mente o quieres conectar? Escríbeme.</p>
+    <div class="contact-box">
+      <p style="color:var(--muted); font-size:14px;">Puedes contactarme directamente por correo</p>
+      <a class="contact-email" href="mailto:adonis.fajardo@outlook.es">
+        ✉️ adonis.fajardo@outlook.es
+      </a>
+      <div class="contact-location">📍 Costa Rica</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 <span>Adonis Fajardo</span> — Diseñado y desarrollado con 💚</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
