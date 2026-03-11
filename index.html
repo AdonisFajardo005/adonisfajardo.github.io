@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
 <head>
@@ -9,8 +10,7 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -19,20 +19,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <body>
 
-<div class="background"></div>
-
 <header>
 
 <div class="logo">Adonis</div>
 
 <nav id="menu">
-
 <a href="#about">Sobre mí</a>
 <a href="#skills">Habilidades</a>
 <a href="#career">Carrera</a>
 <a href="#projects">Proyectos</a>
 <a href="#contact">Contacto</a>
-
 </nav>
 
 <div class="hamburger" onclick="toggleMenu()">
@@ -58,8 +54,8 @@ análisis de datos y bases de datos.
 
 </div>
 
-<div class="hero-image">
-<img src="foto.jpg" alt="Adonis">
+<div class="hero-img">
+<img src="imagenes/profile.jpg" alt="Adonis">
 </div>
 
 </section>
@@ -69,14 +65,8 @@ análisis de datos y bases de datos.
 <h2>Sobre mí</h2>
 
 <p>
-Soy estudiante de Ingeniería en Sistemas con un enfoque claro en el análisis de datos.
-Desde el inicio de mi carrera descubrí que mi verdadera pasión está en transformar
-datos en información útil que apoye decisiones reales.
-
-Mi objetivo es crecer hacia la ciencia de datos construyendo conocimientos en
-machine learning y modelado predictivo.
-
-Soy una persona autodidacta, metódica y con hambre constante de aprender.
+Soy estudiante de Ingeniería en Sistemas en Costa Rica enfocado en análisis de datos,
+bases de datos y desarrollo de software.
 </p>
 
 </section>
@@ -85,32 +75,27 @@ Soy una persona autodidacta, metódica y con hambre constante de aprender.
 
 <h2>Habilidades</h2>
 
-<div class="skills-grid">
+<div class="skill">
 
-<div class="skill-card">
-<i class="fa-brands fa-java"></i>
-<h3>Java</h3>
-</div>
+<span>Java</span>
 
-<div class="skill-card">
-<i class="fa-brands fa-python"></i>
-<h3>Python</h3>
-</div>
+<div class="bar"><div class="progress java"></div></div>
 
-<div class="skill-card">
-<i class="fa-solid fa-database"></i>
-<h3>SQL</h3>
-</div>
+<span>Python</span>
 
-<div class="skill-card">
-<i class="fa-solid fa-chart-column"></i>
-<h3>Power BI</h3>
-</div>
+<div class="bar"><div class="progress python"></div></div>
 
-<div class="skill-card">
-<i class="fa-solid fa-code"></i>
-<h3>C++</h3>
-</div>
+<span>SQL</span>
+
+<div class="bar"><div class="progress sql"></div></div>
+
+<span>Power BI</span>
+
+<div class="bar"><div class="progress powerbi"></div></div>
+
+<span>C++</span>
+
+<div class="bar"><div class="progress cpp"></div></div>
 
 </div>
 
@@ -122,34 +107,25 @@ Soy una persona autodidacta, metódica y con hambre constante de aprender.
 
 <div class="timeline">
 
-<div class="timeline-item">
-
-<div class="timeline-date">2023</div>
-
-<div class="timeline-content">
-Inicio de Ingeniería en Sistemas
+<div class="container left">
+<div class="content">
+<h3>2023</h3>
+<p>Inicio de Ingeniería en Sistemas</p>
+</div>
 </div>
 
+<div class="container right">
+<div class="content">
+<h3>2024</h3>
+<p>Primeros proyectos en Java y bases de datos</p>
+</div>
 </div>
 
-<div class="timeline-item">
-
-<div class="timeline-date">2024</div>
-
-<div class="timeline-content">
-Primeros proyectos en Java y análisis de datos
+<div class="container left">
+<div class="content">
+<h3>2025</h3>
+<p>Proyectos de análisis de datos y dashboards</p>
 </div>
-
-</div>
-
-<div class="timeline-item">
-
-<div class="timeline-date">2025</div>
-
-<div class="timeline-content">
-Desarrollo de dashboards y análisis de datos
-</div>
-
 </div>
 
 </div>
@@ -160,62 +136,30 @@ Desarrollo de dashboards y análisis de datos
 
 <h2>Proyectos</h2>
 
-<div class="projects-grid">
+<div class="projects">
 
 <div class="project-card">
-
-<div class="project-icon">🌐</div>
-
-<h3>adonisfajardo.github.io</h3>
-
-<p>Mi portafolio profesional desplegado en GitHub Pages.</p>
-
-<a href="https://adonisfajardo005.github.io/adonisfajardo.github.io/" target="_blank">
-Ver proyecto
-</a>
-
+<h3>Portafolio Web</h3>
+<p>Mi sitio profesional desplegado en GitHub Pages.</p>
+<a href="https://adonisfajardo005.github.io/adonisfajardo.github.io/">Ver proyecto</a>
 </div>
 
 <div class="project-card">
-
-<div class="project-icon">📊</div>
-
-<h3>Analisis-de-ventas</h3>
-
-<p>Proyecto de análisis de datos y visualización de ventas.</p>
-
-<a href="https://github.com/AdonisFajardo005/Analisis-de-ventas" target="_blank">
-Ver repositorio
-</a>
-
+<h3>Análisis de Ventas</h3>
+<p>Proyecto de análisis de datos con Python.</p>
+<a href="https://github.com/AdonisFajardo005">Ver repositorio</a>
 </div>
 
 <div class="project-card">
-
-<div class="project-icon">💰</div>
-
-<h3>crypto-dashboard</h3>
-
-<p>Dashboard en tiempo real para criptomonedas.</p>
-
-<a href="https://github.com/AdonisFajardo005/crypto-dashboard" target="_blank">
-Ver repositorio
-</a>
-
+<h3>Crypto Dashboard</h3>
+<p>Dashboard de criptomonedas en tiempo real.</p>
+<a href="https://github.com/AdonisFajardo005">Ver repositorio</a>
 </div>
 
 <div class="project-card">
-
-<div class="project-icon">🛒</div>
-
-<h3>Sistema-de-MiniSuper</h3>
-
-<p>Sistema de gestión para minisuper desarrollado en Java.</p>
-
-<a href="https://github.com/AdonisFajardo005/Sistema-de-MiniSuper" target="_blank">
-Ver repositorio
-</a>
-
+<h3>Sistema MiniSuper</h3>
+<p>Sistema de inventario en Java.</p>
+<a href="https://github.com/AdonisFajardo005">Ver repositorio</a>
 </div>
 
 </div>
@@ -227,14 +171,10 @@ Ver repositorio
 <h2>Contacto</h2>
 
 <p>📍 Costa Rica</p>
-
 <p>📧 adonis.fajardo@outlook.es</p>
 
 <p>
-💻
-<a href="https://github.com/AdonisFajardo005" target="_blank">
-GitHub
-</a>
+<a href="https://github.com/AdonisFajardo005">GitHub</a>
 </p>
 
 </section>
@@ -248,9 +188,7 @@ GitHub
 <script>
 
 function toggleMenu(){
-
 document.getElementById("menu").classList.toggle("show")
-
 }
 
 </script>
