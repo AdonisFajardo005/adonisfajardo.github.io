@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,25 +10,28 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
 </head>
 
 <body>
 
+<div class="background"></div>
+
 <header>
 
 <div class="logo">Adonis</div>
 
-<nav id="menu">
+<nav id="nav">
+
 <a href="#about">Sobre mí</a>
 <a href="#skills">Habilidades</a>
-<a href="#career">Carrera</a>
+<a href="#timeline">Carrera</a>
 <a href="#projects">Proyectos</a>
 <a href="#contact">Contacto</a>
+
 </nav>
 
 <div class="hamburger" onclick="toggleMenu()">
@@ -39,6 +42,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 </header>
 
+
 <section class="hero">
 
 <div class="hero-text">
@@ -46,138 +50,217 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <h1>Hola, soy Adonis</h1>
 
 <p>
-Estudiante de Ingeniería en Sistemas enfocado en desarrollo de software,
-análisis de datos y bases de datos.
+Estudiante de Ingeniería en Sistemas de Costa Rica enfocado en desarrollo
+de software, análisis de datos y bases de datos.
 </p>
 
-<a class="btn" href="#projects">Ver proyectos</a>
+<a href="#projects" class="btn">Ver proyectos</a>
 
 </div>
 
-<div class="hero-img">
-<img src="imagenes/profile.jpg" alt="Adonis">
+
+<div class="hero-image">
+
+<img src="images/profile.jpg" alt="Foto de Adonis">
+
 </div>
 
 </section>
+
+
 
 <section id="about">
 
 <h2>Sobre mí</h2>
 
 <p>
-Soy estudiante de Ingeniería en Sistemas en Costa Rica enfocado en análisis de datos,
-bases de datos y desarrollo de software.
+Soy estudiante de Ingeniería en Sistemas en Costa Rica con interés en
+desarrollo de software, análisis de datos y arquitectura de sistemas.
+Me apasiona crear soluciones tecnológicas modernas y eficientes.
 </p>
 
 </section>
+
+
 
 <section id="skills">
 
 <h2>Habilidades</h2>
 
-<div class="skill">
+<div class="skills-grid">
 
-<span>Java</span>
 
-<div class="bar"><div class="progress java"></div></div>
+<div class="skill-card">
 
-<span>Python</span>
+<i class="devicon-java-plain colored"></i>
 
-<div class="bar"><div class="progress python"></div></div>
+<h3>Java</h3>
 
-<span>SQL</span>
+<div class="progress">
+<span style="width:85%"></span>
+</div>
 
-<div class="bar"><div class="progress sql"></div></div>
+</div>
 
-<span>Power BI</span>
 
-<div class="bar"><div class="progress powerbi"></div></div>
+<div class="skill-card">
 
-<span>C++</span>
+<i class="devicon-mysql-plain colored"></i>
 
-<div class="bar"><div class="progress cpp"></div></div>
+<h3>SQL</h3>
+
+<div class="progress">
+<span style="width:80%"></span>
+</div>
+
+</div>
+
+
+<div class="skill-card">
+
+<i class="devicon-python-plain colored"></i>
+
+<h3>Python</h3>
+
+<div class="progress">
+<span style="width:75%"></span>
+</div>
+
+</div>
+
+
+<div class="skill-card">
+
+<i class="devicon-javascript-plain colored"></i>
+
+<h3>JavaScript</h3>
+
+<div class="progress">
+<span style="width:65%"></span>
+</div>
+
+</div>
+
+
+<div class="skill-card">
+
+<i class="devicon-cplusplus-plain colored"></i>
+
+<h3>C++</h3>
+
+<div class="progress">
+<span style="width:70%"></span>
+</div>
+
+</div>
+
+
+<div class="skill-card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="40">
+
+<h3>Power BI</h3>
+
+<div class="progress">
+<span style="width:70%"></span>
+</div>
+
+</div>
+
 
 </div>
 
 </section>
 
-<section id="career">
 
-<h2>Carrera</h2>
+
+<section id="timeline">
+
+<h2>Mi Carrera</h2>
 
 <div class="timeline">
 
-<div class="container left">
-<div class="content">
-<h3>2023</h3>
-<p>Inicio de Ingeniería en Sistemas</p>
-</div>
+<div class="timeline-item">
+
+<div class="timeline-date">2023</div>
+
+<div class="timeline-content">
+
+<h3>Inicio Ingeniería en Sistemas</h3>
+
+<p>
+Comencé mi formación en desarrollo de software y bases de datos.
+</p>
+
 </div>
 
-<div class="container right">
-<div class="content">
-<h3>2024</h3>
-<p>Primeros proyectos en Java y bases de datos</p>
-</div>
 </div>
 
-<div class="container left">
-<div class="content">
-<h3>2025</h3>
-<p>Proyectos de análisis de datos y dashboards</p>
+
+
+<div class="timeline-item">
+
+<div class="timeline-date">2024</div>
+
+<div class="timeline-content">
+
+<h3>Primeros proyectos</h3>
+
+<p>
+Desarrollo de aplicaciones en Java con bases de datos SQL.
+</p>
+
 </div>
+
+</div>
+
+
+
+<div class="timeline-item">
+
+<div class="timeline-date">2025</div>
+
+<div class="timeline-content">
+
+<h3>Análisis de datos</h3>
+
+<p>
+Creación de dashboards y análisis de datos utilizando Python y Power BI.
+</p>
+
+</div>
+
 </div>
 
 </div>
 
 </section>
+
+
 
 <section id="projects">
 
 <h2>Proyectos</h2>
 
-<div class="projects">
-
-<div class="project-card">
-<h3>Portafolio Web</h3>
-<p>Mi sitio profesional desplegado en GitHub Pages.</p>
-<a href="https://adonisfajardo005.github.io/adonisfajardo.github.io/">Ver proyecto</a>
-</div>
-
-<div class="project-card">
-<h3>Análisis de Ventas</h3>
-<p>Proyecto de análisis de datos con Python.</p>
-<a href="https://github.com/AdonisFajardo005">Ver repositorio</a>
-</div>
-
-<div class="project-card">
-<h3>Crypto Dashboard</h3>
-<p>Dashboard de criptomonedas en tiempo real.</p>
-<a href="https://github.com/AdonisFajardo005">Ver repositorio</a>
-</div>
-
-<div class="project-card">
-<h3>Sistema MiniSuper</h3>
-<p>Sistema de inventario en Java.</p>
-<a href="https://github.com/AdonisFajardo005">Ver repositorio</a>
-</div>
-
-</div>
+<div id="repos"></div>
 
 </section>
+
+
 
 <section id="contact">
 
 <h2>Contacto</h2>
 
-<p>📍 Costa Rica</p>
-<p>📧 adonis.fajardo@outlook.es</p>
+<p>Puedes contactarme directamente por correo:</p>
 
-<p>
-<a href="https://github.com/AdonisFajardo005">GitHub</a>
-</p>
+<p><strong>adonis.fajardo@outlook.es</strong></p>
+
+<p>Costa Rica</p>
 
 </section>
+
+
 
 <footer>
 
@@ -185,13 +268,8 @@ bases de datos y desarrollo de software.
 
 </footer>
 
-<script>
 
-function toggleMenu(){
-document.getElementById("menu").classList.toggle("show")
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 
