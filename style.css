@@ -125,6 +125,8 @@ box-shadow:0 25px 70px rgba(0,0,0,0.7);
 
 /* secciones */
 
+/* secciones */
+
 section{
 max-width:1100px;
 margin:auto;
@@ -135,6 +137,16 @@ text-align:center;
 h2{
 font-size:36px;
 margin-bottom:40px;
+}
+
+/* texto sobre mi */
+
+#about p{
+max-width:800px;
+margin:20px auto;
+line-height:1.8;
+opacity:0.85;
+font-size:17px;
 }
 
 /* habilidades */
